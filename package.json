@@ -1,11 +1,13 @@
 {
     "name": "thr33per.github.io",
+    "homepage": "https://thr33per.github.io",
     "private": true,
     "version": "0.0.0",
     "type": "module",
     "scripts": {
         "dev": "vite --port 3000",
         "build": "tsc && vite build --outDir build",
+        "deploy": "gh-pages -d build",
         "lint": "eslint --ext ts --ext tsx 'src/**/*.{ts,tsx}'",
         "prettier": "prettier --write .",
         "preview": "vite preview"
